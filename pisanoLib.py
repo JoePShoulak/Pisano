@@ -29,6 +29,7 @@ def pisanoList(m):
 def pisanoPeriod(modulus):
   return len(pisanoList(modulus))
 
+# return the 2D pisano array of modulus m and height h
 def pisanoArray(modulus, height):
   if modulus < 3:
     raise InvalidModulusError(modulus)
@@ -51,4 +52,3 @@ def pisanoArray(modulus, height):
 
   return Matrix(array)
   
-
