@@ -30,6 +30,9 @@ def pisanoPeriod(modulus):
   return len(pisanoList(modulus))
 
 def pisanoArray(modulus, height):
+  if modulus < 3:
+    raise InvalidModulusError(modulus)
+
   pList = pisanoList(modulus)
   period = len(pList)
 

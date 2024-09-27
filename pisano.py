@@ -15,3 +15,6 @@ try:
 except InvalidHeightError as e:
   print(f"error: {e}")
   exit()
+except InvalidModulusError as e:
+  print(f"error: {e}")
+  exit()
